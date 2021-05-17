@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+const path = require('path');
+
 module.exports = {
   extends: [
     '@spotify/eslint-config-base',
@@ -26,7 +28,7 @@ module.exports = {
     'plugin:monorepo/recommended',
   ],
   parser: '@typescript-eslint/parser',
-  plugins: ['import'],
+  plugins: ['import', 'notice'],
   env: {
     jest: true,
   },
@@ -86,6 +88,15 @@ module.exports = {
         ],
         // Avoid cross-package imports
         patterns: ['**/../../**/*/src/**'],
+      },
+    ],
+    'notice/notice': [
+      'error',
+      {
+        // eslint-disable-next-line no-restricted-syntax
+        templateFile: path.resolve(__dirname, './copyrightHeader.txt'),
+        nonMatchingTolerance: 0.7,
+        onNonMatchingHeader: 'replace',
       },
     ],
   },
