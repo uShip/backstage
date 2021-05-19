@@ -14,9 +14,4 @@
  * limitations under the License.
  */
 
-export { ProjectGrowthAlert } from './ProjectGrowthAlert';
-export { UnlabeledDataflowAlert } from './UnlabeledDataflowAlert';
-
-export { KubernetesMigrationAlert } from './KubernetesMigrationAlert';
-export type { KubernetesMigrationApi } from './KubernetesMigrationAlert';
-export type { KubernetesMigrationData } from './KubernetesMigrationAlert';
+export * from './KubernetesMigrationAlertCard';

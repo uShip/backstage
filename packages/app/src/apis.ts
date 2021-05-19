@@ -27,7 +27,7 @@ import {
 } from '@backstage/integration-react';
 import {
   costInsightsApiRef,
-  ExampleCostInsightsClient,
+  CostInsightsClient
 } from '@backstage/plugin-cost-insights';
 import {
   graphQlBrowseApiRef,
@@ -60,5 +60,9 @@ export const apis: AnyApiFactory[] = [
       ]),
   }),
 
-  createApiFactory(costInsightsApiRef, new ExampleCostInsightsClient()),
+  createApiFactory({
+    api: costInsightsApiRef,
+    deps: {},
+    factory: () => new CostInsightsClient(),
+  }),
 ];
