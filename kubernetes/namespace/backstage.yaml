@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: backstage
+  labels:
+    app.kubernetes.io/component: infra
+    app.kubernetes.io/part-of: kube-services
+    app.kubernetes.io/managed-by: flux
+  annotations:
+    source-control: "https://github.com/uShip/kube-services"

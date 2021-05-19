@@ -1,0 +1,21 @@
+# kubernetes/backstage-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: backstage
+  namespace: backstage
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: backstage.uship.io
+    external-dns.uship.io/provider: ushipio
+    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
+    service.beta.kubernetes.io/aws-load-balancer-ssl-ports: '443'
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:us-west-2:067515370098:certificate/9989b4cb-aee5-4e64-90a8-174ef204fdd9
+spec:
+  selector:
+    app: backstage
+  type: LoadBalancer
+  ports:
+  - name: https
+    port: 443
+    protocol: TCP
+    targetPort: 7000

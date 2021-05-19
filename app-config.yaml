@@ -1,6 +1,7 @@
+#replace the top level app-config in the backstage repo with this app-config then build according to https://backstage.io/docs/deployment/docker
 app:
   title: Backstage Example App
-  baseUrl: http://localhost:3000
+  baseUrl: http://backstage.uship.io:3000
   googleAnalyticsTrackingId: # UA-000000-0
   #datadogRum:
   #  clientToken: '123456789'
@@ -23,14 +24,14 @@ app:
             title: '#backstage'
 
 backend:
-  baseUrl: http://localhost:7000
+  baseUrl: http://backstage.uship.io:7000
   listen:
     port: 7000
   database:
     client: sqlite3
     connection: ':memory:'
   cors:
-    origin: http://localhost:3000
+    origin: http://backstage.uship.io:3000
     methods: [GET, POST, PUT, DELETE]
     credentials: true
   csp:
@@ -49,7 +50,7 @@ proxy:
       Circle-Token: ${CIRCLECI_AUTH_TOKEN}
 
   '/jenkins/api':
-    target: http://localhost:8080
+    target: http://jenkins.uship.com:8080
     headers:
       Authorization: ${JENKINS_BASIC_AUTH_HEADER}
 
@@ -111,7 +112,7 @@ rollbar:
   accountToken: my-rollbar-account-token
 
 lighthouse:
-  baseUrl: http://localhost:3003
+  baseUrl: http://backstage.uship.io:3003
 
 kubernetes:
   serviceLocatorMethod:
