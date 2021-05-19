@@ -18,4 +18,4 @@ spec:
   - name: https
     port: 443
     protocol: TCP
-    targetPort: 7000
+    targetPort: 3000
