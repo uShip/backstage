@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: uShip
+  description: A collection of all teams at uShip
+spec:
+  targets:
+    - ./uShip/org.yaml
