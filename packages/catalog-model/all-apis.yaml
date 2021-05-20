@@ -5,4 +5,4 @@ metadata:
   description: A collection of all Backstage example APIs
 spec:
   targets:
-    - ./apis/profile-pages-api.yaml
+    - ./apis/ratings-and-reviews-api.yaml

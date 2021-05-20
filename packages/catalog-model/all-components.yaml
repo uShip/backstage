@@ -8,3 +8,4 @@ spec:
     - ./components/serverless-react-boilerplate-component.yaml
     - ./components/homepage-pages.yaml
     - ./components/profile-pages.yaml
+    - ./components/ratings-and-reviews.yaml

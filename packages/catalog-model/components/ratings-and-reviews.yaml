@@ -1,20 +1,22 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: profile-pages
-  description: Profile Pages
+  name: ratings-and-reviews
+  description: Ratings and Reviews
   tags:
     - aws
     - react
     - node
   links:
-    - url: https://github.com/uShip/profile-pages
+    - url: https://github.com/uShip/ratings-and-reviews
       title: GitHub Repo
       icon: github
   annotations:
-    github.com/project-slug: uShip/profile-pages
+    github.com/project-slug: uShip/ratings-and-reviews
     github.com/team-slug: uShip/hyrule
 spec:
   type: service
   lifecycle: production
   owner: hyrule
+  providesApis:
+    - ratings-and-reviews-api
