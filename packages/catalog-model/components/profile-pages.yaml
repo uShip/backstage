@@ -1,19 +1,22 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: serverless-react-boilerplate
-  description: Serverless React Boilerplate
+  name: profile-pages
+  description: Profile Pages
   tags:
     - aws
     - react
     - node
   links:
-    - url: https://github.com/uShip/serverless-react-boilerplate
+    - url: https://github.com/uShip/profile-pages
       title: GitHub Repo
       icon: github
   annotations:
-    github.com/project-slug: uShip/serverless-react-boilerplate
+    github.com/project-slug: uShip/profile-pages
+    github.com/team-slug: uShip/hyrule
 spec:
   type: service
   lifecycle: production
   owner: hyrule
+  providesApis:
+    - profile-pages-api

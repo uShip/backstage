@@ -6,3 +6,5 @@ metadata:
 spec:
   targets:
     - ./components/serverless-react-boilerplate-component.yaml
+    - ./components/homepage-pages.yaml
+    - ./components/profile-pages.yaml

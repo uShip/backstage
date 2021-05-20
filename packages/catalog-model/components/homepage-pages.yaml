@@ -9,8 +9,12 @@ metadata:
     - node
   links:
     - url: https://github.com/uShip/homepage-pages
+      title: GitHub Repo
+      icon: github
+  annotations:
+    github.com/project-slug: uShip/homepage-pages
+    github.com/team-slug: uShip/hyrule
 spec:
   type: service
   lifecycle: production
   owner: hyrule
-  # system: audio-playback
