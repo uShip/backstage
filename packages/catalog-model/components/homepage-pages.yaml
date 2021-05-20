@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: homepage-pages
+  description: Home Page Pages
+  tags:
+    - aws
+    - react
+    - node
+  links:
+    - url: https://github.com/uShip/homepage-pages
+spec:
+  type: service
+  lifecycle: production
+  owner: hyrule
+  # system: audio-playback
