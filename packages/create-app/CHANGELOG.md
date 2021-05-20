@@ -817,7 +817,7 @@
   +
        # Backstage example templates
        - type: url
-         target: https://github.com/backstage/backstage/blob/master/plugins/scaffolder-backend/sample-templates/react-ssr-template/template.yaml
+         target: https://github.com/backstage/backstage/blob/master/plugins/scaffolder-backend/templates/react-ssr-template/template.yaml
   ```
 
 - Updated dependencies [010aed784]

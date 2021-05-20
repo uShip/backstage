@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: example-templates-remote
+  name: templates-remote
   description: A collection of remotely available Backstage example templates
 spec:
   type: url

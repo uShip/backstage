@@ -30,7 +30,7 @@ catalog:
       target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all-apis.yaml
     # Backstage example templates
     - type: github
-      target: https://github.com/backstage/backstage/blob/master/plugins/scaffolder-backend/sample-templates/all-templates.yaml
+      target: https://github.com/backstage/backstage/blob/master/plugins/scaffolder-backend/templates/all-templates.yaml
 {{- else }}
   locations: []
 {{- end }}

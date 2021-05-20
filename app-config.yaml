@@ -227,8 +227,8 @@ catalog:
     # - type: file
     #   target: ../../plugins/github-actions/examples/sample.yaml
     # # Example component for TechDocs
-    # - type: file
-    #   target: ../../plugins/techdocs-backend/examples/documented-component/catalog-info.yaml
+    - type: file
+      target: ../../plugins/techdocs-backend/examples/documented-component/catalog-info.yaml
     # # Backstage example APIs
     - type: file
       target: ../catalog-model/all-apis.yaml
@@ -242,8 +242,8 @@ catalog:
     - type: file
       target: ../catalog-model/all-domains.yaml
     # # Backstage example templates
-    # - type: file
-    #   target: ../../plugins/scaffolder-backend/sample-templates/all-templates.yaml
+    - type: file
+      target: ../../plugins/scaffolder-backend/templates/all-templates.yaml
     # # Backstage example groups and users
     - type: file
       target: ../catalog-model/uShip.yaml
@@ -283,6 +283,10 @@ auth:
     #    clientId: ${AUTH_GITHUB_CLIENT_ID}
     #    clientSecret: ${AUTH_GITHUB_CLIENT_SECRET}
     #    enterpriseInstanceUrl: ${AUTH_GITHUB_ENTERPRISE_INSTANCE_URL}
+    github:
+      production:
+      clientId: 683cb790c9c82ab0c229
+      clientSecret: d2a303701ddd29aa4e2c03c489e08a3a221aaddb
     #gitlab:
     #  development:
     #    clientId: ${AUTH_GITLAB_CLIENT_ID}
