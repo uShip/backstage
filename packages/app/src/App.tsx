@@ -20,6 +20,8 @@ import {
   FlatRoutes,
   OAuthRequestDialog,
   SignInPage,
+  githubAuthApiRef,
+  oktaAuthApiRef, 
 } from '@backstage/core';
 import { apiDocsPlugin, ApiExplorerPage } from '@backstage/plugin-api-docs';
 import {
@@ -54,9 +56,22 @@ import { Navigate, Route } from 'react-router';
 import { apis } from './apis';
 import { Root } from './components/Root';
 import { entityPage } from './components/catalog/EntityPage';
-import { providers } from './identityProviders';
+// import { providers } from './identityProviders';
 import * as plugins from './plugins';
 
+const authProviders = [
+  {
+    id: 'github-auth-provider',
+    title: 'GitHub',
+    message: 'Login via Github',
+    apiRef: githubAuthApiRef,
+  },  {
+    id: 'okta-auth-provider',
+    title: 'OKTA',
+    message: 'Login via Okta',
+    apiRef: oktaAuthApiRef,
+  },
+]
 const app = createApp({
   apis,
   plugins: Object.values(plugins),
@@ -69,7 +84,7 @@ const app = createApp({
       return (
         <SignInPage
           {...props}
-          providers={['guest', 'custom', ...providers]}
+          providers={authProviders}
           title="Select a sign-in method"
           align="center"
         />
