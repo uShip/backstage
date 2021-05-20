@@ -34,7 +34,7 @@ spec:
               content:
                 application/json:
                   schema:
-                    $ref: "#/components/schemas/Pet"
+                    $ref: "#/components/schemas/Review"
               default:
                 description: unexpected error
                 content:
@@ -43,23 +43,41 @@ spec:
                       $ref: "#/components/schemas/Error"
     components:
       schemas:
-        Pet:
+        Review:
           type: object
           required:
             - id
-            - name
           properties:
             id:
               type: integer
               format: int64
-            name:
+            listingId:
               type: string
-            tag:
+            dateCreated:
               type: string
-        Pets:
-          type: array
-          items:
-            $ref: "#/components/schemas/Pet"
+            score:
+              type: integer
+            content:
+              type: string
+            reviewerType:
+              type: string
+            reviewerName:
+              type: string
+            title:
+              type: string
+            detailedFeedback:
+              type: object
+              properties:
+                recommendCarrier:
+                  type: string
+                communication:
+                  type: integer
+                careOfGoods:
+                  type: integer
+                punctuality:
+                  type: integer
+                servicesAsDescribed:
+                  type: integer
         Error:
           type: object
           required:
