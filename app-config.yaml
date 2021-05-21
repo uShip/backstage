@@ -227,8 +227,10 @@ catalog:
     # - type: file
     #   target: ../../plugins/github-actions/examples/sample.yaml
     # # Example component for TechDocs
-    - type: file
-      target: ../../plugins/techdocs-backend/examples/documented-component/catalog-info.yaml
+    # - type: file
+    #   target: ../../plugins/techdocs-backend/docs/uShip/catalog-info.yaml
+    # - type: file
+    #   target: ./catalog-info.yaml
     # # Backstage example APIs
     - type: file
       target: ../catalog-model/all-apis.yaml
@@ -278,15 +280,11 @@ auth:
     #  development:
     #    clientId: ${AUTH_GOOGLE_CLIENT_ID}
     #    clientSecret: ${AUTH_GOOGLE_CLIENT_SECRET}
-    #github:
-    #  development:
-    #    clientId: ${AUTH_GITHUB_CLIENT_ID}
-    #    clientSecret: ${AUTH_GITHUB_CLIENT_SECRET}
-    #    enterpriseInstanceUrl: ${AUTH_GITHUB_ENTERPRISE_INSTANCE_URL}
     github:
-      production:
-      clientId: 683cb790c9c82ab0c229
-      clientSecret: d2a303701ddd29aa4e2c03c489e08a3a221aaddb
+      development:
+        clientId: ${AUTH_GITHUB_CLIENT_ID}
+        clientSecret: ${AUTH_GITHUB_CLIENT_SECRET}
+    #    enterpriseInstanceUrl: ${AUTH_GITHUB_ENTERPRISE_INSTANCE_URL}
     #gitlab:
     #  development:
     #    clientId: ${AUTH_GITLAB_CLIENT_ID}

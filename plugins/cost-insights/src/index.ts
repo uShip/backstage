@@ -35,6 +35,7 @@ export { MockConfigProvider, MockCurrencyProvider } from './testUtils';
 export * from './api';
 export * from './alerts';
 export * from './types';
+export * from './CostInsightsClient';
 
 export type {
   BarChartProps,

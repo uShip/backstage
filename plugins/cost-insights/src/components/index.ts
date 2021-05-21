@@ -28,6 +28,7 @@ export * from './CostInsightsSupportButton';
 export * from './CostInsightsTabs';
 export * from './CostOverviewCard';
 export * from './CurrencySelect';
+export * from './KubernetesMigrationAlertCard';
 export * from './LabelDataflowInstructionsPage';
 export * from './LegendItem';
 export * from './MetricSelect';
