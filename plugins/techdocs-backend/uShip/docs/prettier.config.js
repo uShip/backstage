@@ -15,7 +15,7 @@
  */
 
 // Use Object.assign since we haven't configured eslint for ... support in here
-module.exports = Object.assign({}, require('@spotify/prettier-config'), {
-  proseWrap: 'always',
-  printWidth: 80,
-});
+// module.exports = Object.assign({}, require('@spotify/prettier-config'), {
+//   proseWrap: 'always',
+//   printWidth: 80,
+// });
