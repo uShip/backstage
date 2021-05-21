@@ -2,15 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
   name: templates-local
-<<<<<<< HEAD
   description: A collection of locally available Backstage example templates
 spec:
   targets:
     - ./docs-template/template.yaml
-=======
-  description: A collection of locally available Backstage templates
-spec:
-  targets:
-    - ./docs-template/template.yaml
-    - ./create-react-app/template.yaml
->>>>>>> origin/master
