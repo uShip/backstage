@@ -131,7 +131,6 @@ kafka:
 integrations:
   github:
     - host: github.com
-      # token: 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
       token: ${GITHUB_TOKEN}
     ### Example for how to add your GitHub Enterprise instance using the API:
     # - host: ghe.example.net
