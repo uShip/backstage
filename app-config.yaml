@@ -131,6 +131,7 @@ kafka:
 integrations:
   github:
     - host: github.com
+      # token: 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
       token: ${GITHUB_TOKEN}
     ### Example for how to add your GitHub Enterprise instance using the API:
     # - host: ghe.example.net
@@ -226,24 +227,24 @@ catalog:
     # # Example component for github-actions and TechDocs
     # - type: file
     #   target: ../../plugins/github-actions/examples/sample.yaml
-    # # Example component for TechDocs
-    # - type: file
-    #   target: ../../plugins/techdocs-backend/examples/documented-component/catalog-info.yaml
+    # Example component for TechDocs
+    - type: file
+      target: ../../plugins/techdocs-backend/uShip/catalog-info.yaml
     # # Backstage example APIs
     - type: file
       target: ../catalog-model/all-apis.yaml
     # # Backstage example resources
-    - type: file
-      target: ../catalog-model/all-resources.yaml
-    # # Backstage example systems
-    - type: file
-      target: ../catalog-model/all-systems.yaml
-    # # Backstage example domains
-    - type: file
-      target: ../catalog-model/all-domains.yaml
-    # # Backstage example templates
     # - type: file
-    #   target: ../../plugins/scaffolder-backend/sample-templates/all-templates.yaml
+    #   target: ../catalog-model/all-resources.yaml
+    # # # Backstage example systems
+    # - type: file
+    #   target: ../catalog-model/all-systems.yaml
+    # # # Backstage example domains
+    # - type: file
+    #   target: ../catalog-model/all-domains.yaml
+    # # Backstage example templates
+    - type: file
+      target: ../../plugins/scaffolder-backend/templates/all-templates.yaml
     # # Backstage example groups and users
     - type: file
       target: ../catalog-model/uShip.yaml
