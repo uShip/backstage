@@ -1,0 +1,8 @@
+site_name: 'uShip'
+site_description: 'Main documentation for uShip features and platform APIs'
+
+plugins:
+  - techdocs-core
+
+nav:
+  - Home: 'index.md'
