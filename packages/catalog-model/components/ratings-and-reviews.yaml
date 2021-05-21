@@ -14,6 +14,7 @@ metadata:
   annotations:
     github.com/project-slug: uShip/ratings-and-reviews
     github.com/team-slug: uShip/hyrule
+    backstage.io/techdocs-ref: url:https://github.com/facebook/react-native/tree/master
 spec:
   type: service
   lifecycle: production

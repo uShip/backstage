@@ -21,7 +21,7 @@ import {
   OAuthRequestDialog,
   SignInPage,
   githubAuthApiRef,
-  oktaAuthApiRef, 
+  oktaAuthApiRef,
 } from '@backstage/core';
 import { apiDocsPlugin, ApiExplorerPage } from '@backstage/plugin-api-docs';
 import {
@@ -65,13 +65,14 @@ const authProviders = [
     title: 'GitHub',
     message: 'Login via Github',
     apiRef: githubAuthApiRef,
-  },  {
+  },
+  {
     id: 'okta-auth-provider',
     title: 'OKTA',
     message: 'Login via Okta',
     apiRef: oktaAuthApiRef,
   },
-]
+];
 const app = createApp({
   apis,
   plugins: Object.values(plugins),
@@ -84,7 +85,7 @@ const app = createApp({
       return (
         <SignInPage
           {...props}
-          providers={authProviders}
+          providers={['guest', ...authProviders]}
           title="Select a sign-in method"
           align="center"
         />
