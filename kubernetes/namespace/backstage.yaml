@@ -7,4 +7,4 @@ metadata:
     app.kubernetes.io/part-of: kube-services
     app.kubernetes.io/managed-by: flux
   annotations:
-    source-control: "https://github.com/uShip/kube-services"
+    source-control: 'https://github.com/uShip/kube-services'

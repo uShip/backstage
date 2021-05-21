@@ -303,10 +303,10 @@ auth:
     #    clientSecret: ${AUTH_OAUTH2_CLIENT_SECRET}
     #    authorizationUrl: ${AUTH_OAUTH2_AUTH_URL}
     #    tokenUrl: ${AUTH_OAUTH2_TOKEN_URL}
-        ###
-        # provide a list of scopes as needed for your OAuth2 Server:
-        #
-        # scope: saml-login-selector openid profile email
+    ###
+    # provide a list of scopes as needed for your OAuth2 Server:
+    #
+    # scope: saml-login-selector openid profile email
     #oidc:
     #  development:
     #    metadataUrl: ${AUTH_OIDC_METADATA_URL}
