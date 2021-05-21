@@ -27,7 +27,7 @@ import {
 } from '@backstage/integration-react';
 import {
   costInsightsApiRef,
-  CostInsightsClient
+  CostInsightsClient,
 } from '@backstage/plugin-cost-insights';
 import {
   graphQlBrowseApiRef,

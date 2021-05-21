@@ -5,6 +5,6 @@ coverage
 *.hbs
 templates
 api-report.md
-plugins/scaffolder-backend/sample-templates
+plugins/scaffolder-backend/templates
 .vscode
 dist-types

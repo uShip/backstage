@@ -5,5 +5,5 @@ metadata:
   description: A collection of remotely available Backstage example templates
 spec:
   type: url
-  targets:
-    # - https://github.com/spotify/cookiecutter-golang/blob/master/template.yaml
+  # targets:
+  #   - https://github.com/spotify/cookiecutter-golang/blob/master/template.yaml

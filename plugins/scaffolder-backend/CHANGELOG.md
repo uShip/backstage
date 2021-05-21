@@ -163,7 +163,7 @@
       destination: '{{ parseRepoUrl parameters.repoUrl }}'
   ```
 
-  Will produce a parsed version of the `repoUrl` of type `{ repo: string, owner: string, host: string }` that you can use in your actions. Specifically `cookiecutter` with `{{ cookiecutter.destination.owner }}` like the `plugins/scaffolder-backend/sample-templates/v1beta2-demo/template.yaml` example.
+  Will produce a parsed version of the `repoUrl` of type `{ repo: string, owner: string, host: string }` that you can use in your actions. Specifically `cookiecutter` with `{{ cookiecutter.destination.owner }}` like the `plugins/scaffolder-backend/templates/v1beta2-demo/template.yaml` example.
 
 - a376e3ee8: Adds a collaborator field to GitHub publish action for multiple users and access levels
 - 423a514c3: Fix execution of the GitHub Pull Request publish action on Windows.
@@ -532,7 +532,7 @@
   catalog:
     locations:
       - type: url
-        target: https://github.com/backstage/backstage/blob/other/plugins/scaffolder-backend/sample-templates/docs-template/template.yaml
+        target: https://github.com/backstage/backstage/blob/other/plugins/scaffolder-backend/templates/docs-template/template.yaml
   ```
 
   This also fixes a 404 in the prepare stage for GitLab URLs.

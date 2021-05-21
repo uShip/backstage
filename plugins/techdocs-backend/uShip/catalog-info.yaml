@@ -6,13 +6,11 @@ metadata:
     Backstage is an open-source developer portal that puts the developer experience first.
   links:
     - title: Website
-      url: http://backstage.io
+      url: http://backstage.uship.io
     - title: Documentation
-      url: https://backstage.io/docs
+      url: https://backstage.uship.io/docs
     - title: Storybook
-      url: https://backstage.io/storybook
-    - title: Discord Chat
-      url: https://discord.com/invite/EBHEGzX
+      url: https://backstage.uship.io/storybook
   annotations:
     github.com/project-slug: uShip/backstage
     backstage.io/techdocs-ref: url:https://github.com/uShip/backstage
