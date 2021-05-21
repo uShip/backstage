@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: example-components
+  description: A collection of all Backstage example components
+spec:
+  targets:
+    - ./components/serverless-react-boilerplate-component.yaml
+    - ./components/homepage-pages.yaml
+    - ./components/profile-pages.yaml
+    - ./components/ratings-and-reviews.yaml

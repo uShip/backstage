@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: profile-pages
+  description: Profile Pages
+  tags:
+    - aws
+    - react
+    - node
+  links:
+    - url: https://github.com/uShip/profile-pages
+      title: GitHub Repo
+      icon: github
+  annotations:
+    github.com/project-slug: uShip/profile-pages
+    github.com/team-slug: uShip/hyrule
+spec:
+  type: service
+  lifecycle: production
+  owner: hyrule

@@ -1,0 +1,94 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: ratings-and-reviews-api
+  description: Ratings and Reviews
+spec:
+  type: openapi
+  lifecycle: production
+  owner: hyrule
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Swagger Ratings and Reviews
+      license:
+        name: MIT
+    servers:
+      - url: http://petstore.swagger.io/v1
+    paths:
+      /widgets/review/{productId}:
+        get:
+          summary: Review Widget
+          operationId: showReviewsById
+          tags:
+            - ratingsAndReviews
+          parameters:
+            - name: productId
+              in: path
+              description: The id of the product to retrieve
+              required: true
+              schema:
+                type: string
+          responses:
+            '200':
+              description: Expected response to a valid request
+              content:
+                application/json:
+                  schema:
+                    $ref: "#/components/schemas/Review"
+              default:
+                description: unexpected error
+                content:
+                  application/json:
+                    schema:
+                      $ref: "#/components/schemas/Error"
+    components:
+      schemas:
+        Review:
+          type: object
+          required:
+            - id
+          properties:
+            id:
+              type: integer
+              format: int64
+            listingId:
+              type: string
+            dateCreated:
+              type: string
+            score:
+              type: integer
+            content:
+              type: string
+            reviewerType:
+              type: string
+            reviewerName:
+              type: string
+            title:
+              type: string
+            detailedFeedback:
+              type: object
+              properties:
+                recommendCarrier:
+                  type: string
+                communication:
+                  type: integer
+                careOfGoods:
+                  type: integer
+                punctuality:
+                  type: integer
+                servicesAsDescribed:
+                  type: integer
+        Error:
+          type: object
+          required:
+            - code
+            - message
+          properties:
+            code:
+              type: integer
+              format: int32
+            message:
+              type: string
+

@@ -143,21 +143,7 @@ catalog:
   locations:
     # Backstage Example Components
     - type: url
-      target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/components/artist-lookup-component.yaml
-    - type: url
-      target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/components/playback-order-component.yaml
-    - type: url
-      target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/components/podcast-api-component.yaml
-    - type: url
-      target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/components/queue-proxy-component.yaml
-    - type: url
-      target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/components/searcher-component.yaml
-    - type: url
-      target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/components/playback-lib-component.yaml
-    - type: url
-      target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/components/www-artist-component.yaml
-    - type: url
-      target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/components/shuffle-api-component.yaml
+      target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/components/serverless-react-boilerplate-component.yaml
 ```
 
 ### Running the Backend
