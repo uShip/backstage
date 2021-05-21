@@ -1,7 +1,7 @@
 #replace the top level app-config in the backstage repo with this app-config then build according to https://backstage.io/docs/deployment/docker
 app:
   title: Backstage Example App
-  baseUrl: http://localhost:3000
+  baseUrl: http://backstage.uship.io:3000
   googleAnalyticsTrackingId: # UA-000000-0
   #datadogRum:
   #  clientToken: '123456789'
@@ -24,14 +24,14 @@ app:
             title: '#backstage'
 
 backend:
-  baseUrl: http://localhost:7000
+  baseUrl: http://backstage.uship.io:7000
   listen:
     port: 7000
   database:
     client: sqlite3
     connection: ':memory:'
   cors:
-    origin: http://localhost:3000
+    origin: http://backstage.uship.io:3000
     methods: [GET, POST, PUT, DELETE]
     credentials: true
   csp:
@@ -271,7 +271,7 @@ scaffolder:
     visibility: public # or or 'private'
 
 auth:
-  environment: development
+  environment: production
   ### Providing an auth.session.secret will enable session support in the auth-backend
   # session:
   #   secret: custom session secret
@@ -281,7 +281,7 @@ auth:
     #    clientId: ${AUTH_GOOGLE_CLIENT_ID}
     #    clientSecret: ${AUTH_GOOGLE_CLIENT_SECRET}
     github:
-      development:
+      production:
         clientId: ${AUTH_GITHUB_CLIENT_ID}
         clientSecret: ${AUTH_GITHUB_CLIENT_SECRET}
     #    enterpriseInstanceUrl: ${AUTH_GITHUB_ENTERPRISE_INSTANCE_URL}
@@ -294,7 +294,7 @@ auth:
     #  entryPoint: 'http://localhost:7001/'
     #  issuer: 'passport-saml'
     okta:
-      development:
+      production:
         clientId: ${AUTH_OKTA_CLIENT_ID}
         clientSecret: ${AUTH_OKTA_CLIENT_SECRET}
         audience: ${AUTH_OKTA_AUDIENCE}
